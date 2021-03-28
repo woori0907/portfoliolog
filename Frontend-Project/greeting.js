@@ -20,7 +20,7 @@ function handleSubmit(event){
 
 function askForName(){
     form.classList.add(SHOWING_CN);
-    form.addEventListener("subm it", handleSubmit);
+    form.addEventListener("submit", handleSubmit);
 }
 
 function paintGreeting(text){
