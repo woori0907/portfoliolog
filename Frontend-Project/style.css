@@ -1,0 +1,11 @@
+#title{
+  color: #989;
+}
+
+.form, .greetings{
+  display: none;
+}
+
+.showing{
+  display: block;
+}
