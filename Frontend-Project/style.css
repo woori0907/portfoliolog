@@ -9,3 +9,7 @@
 .showing{
   display: block;
 }
+
+li{
+  list-style-type: disc;
+}
