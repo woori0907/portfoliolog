@@ -5,7 +5,7 @@ const form = document.querySelector(".js-form"),
 // querySelectorAll : 지정한 요소를 모두 가져옴(배열 형식으로 저장)
 const USER_LS="currentUser";
 const SHOWING_CN = "showing";
-
+ 
 function saveName(text){
     localStorage.setItem(USER_LS, text);
 }
