@@ -4,10 +4,8 @@ const IMG_NUMBER = 3;
 
 
 function paintImage(imgNumber){
-    const image = new Image();
-    image.src = `https://source.unsplash.com/1600x900/?landscape`;
-    image.classList.add("bgImage");
-    backGround.style.backgroundImage = `url('${image.src}')`;
+    const imageURL = "https://source.unsplash.com/1600x900/?nightsky";
+    backGround.style.backgroundImage = `url('${imageURL}')`;
     backGround.style.backgroundPosition = 'center center';
     backGround.style.backgroundSize = 'cover';
 }
