@@ -5,13 +5,33 @@
 .form, .greetings{
   display: none;
 }
-
+.font-color-white{
+  color: #fff;
+}
 body{
   background-color: #34495e;
 }
 
+.contentWrap{
+  width: 100%;
+  text-align: center;
+}
+
 .showing{
   display: block;
+}
+
+.js-title{
+  font-size: 9vw;
+  font-weight: 700;
+}
+
+.js-greetings{
+  font-size: 3vw;
+}
+
+.js-toDoForm{
+
 }
 
 li{
@@ -27,7 +47,7 @@ li{
   }
 }
 
-.bgImage{
+.js-backGround{
   position: absolute;
   top: 0;
   left: 0;
