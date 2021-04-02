@@ -10,6 +10,7 @@
 }
 body{
   background-color: #34495e;
+  text-align: center;
 }
 
 .contentWrap{
@@ -22,20 +23,30 @@ body{
 }
 
 .js-title{
-  font-size: 9vw;
+  font-size: 1000%;
   font-weight: 700;
 }
 
 .js-greetings{
-  font-size: 3vw;
+  font-size: 500%;
 }
 
 .js-toDoForm{
 
 }
+.toDoTitle{
+  font-size: 300%;
+}
+.inputTypeToDo{
+  font-size: 300%;
+  font-size: 1.5vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
 
 li{
-  list-style-type: disc;
+  font-size: 300%;
 }
 
 @keyframes fadeIn{
