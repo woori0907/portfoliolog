@@ -8,7 +8,9 @@ function getWeather(lat, lon){
     }).then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        const currentWeather = json.weather[0].main;
+        weather.innerText = `${currentWeather} ${temperature} @ ${place}`;
+        console.log(json);
     });
     // then : 외부 api참조시 데이터가 들어오는데 시간이 걸릴 수 있음. then은 이러한 경우 이전 함수가 완료된 이후에 실행되도록 함. 만약 이것을 사용하지 않고 바로 함수를 실행시켰을 경우 이전 작업이 완료되지 않은 상태에서 다음 문장이 실행되어 오류가 발생할 수 있음.
 }
