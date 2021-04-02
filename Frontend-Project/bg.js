@@ -5,7 +5,7 @@ const IMG_NUMBER = 3;
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `images/${imgNumber + 1}.jpg`;
+    image.src = `https://source.unsplash.com/random?landscape?1920x1080`;
     image.classList.add("bgImage");
     body.appendChild(image);
 }
