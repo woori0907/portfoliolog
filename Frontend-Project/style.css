@@ -1,3 +1,7 @@
+*{
+
+}
+
 #title{
   color: #989;
 }
@@ -14,8 +18,25 @@ body{
 }
 
 .contentWrap{
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentHeader{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: flex-end;
+}
+
+.js-weather{
+  font-size: 20px
+}
+
+.contentAbove{
+  display: flex;
+  flex: 1 1 auto;
+  height: 250px;
 }
 
 .showing{
@@ -25,17 +46,39 @@ body{
 .js-title{
   font-size: 1000%;
   font-weight: 700;
+  margin: 0;
 }
 
 .js-greetings{
   font-size: 500%;
+  margin: 0;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
 }
 
 .js-toDoForm{
-
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
 }
+.js-toDoForm input{
+  display: flex;
+  width: 300px;
+  font-size: 200%;
+}
+
+
 .toDoTitle{
   font-size: 300%;
+  margin: 1% auto;
+}
+.js-clock{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
 }
 .inputTypeToDo{
   font-size: 300%;
@@ -44,9 +87,22 @@ body{
   border: none;
   border-bottom: 2px solid #fff;
 }
+.inputTypeToDo::placeholder{
+  color: #fff;
+}
+.inputTypeToDo:focus{
+  color: #fff;
+}
+
+.js-toDoList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 li{
-  font-size: 300%;
+  font-size: 230%;
+  margin-bottom: 1%;
 }
 
 @keyframes fadeIn{
