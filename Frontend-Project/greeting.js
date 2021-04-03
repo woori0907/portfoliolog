@@ -3,6 +3,7 @@ const form = document.querySelector(".js-form"),
     greeting = document.querySelector(".js-greetings");
 //  querySelector : 클래스, 태그, 아이디 등 지정한 인자에 대한 것 중 가장 첫번째 것을 가져옴
 // querySelectorAll : 지정한 요소를 모두 가져옴(배열 형식으로 저장)
+const toDoFormCheck = document.querySelector(".js-toDoForm");
 const USER_LS="currentUser";
 const SHOWING_CN = "showing";
  
@@ -26,6 +27,7 @@ function askForName(){
 function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
+    toDoFormCheck.classList.add(SHOWING_CN);
     greeting.innerText = `Hello, ${text}`
 }
 

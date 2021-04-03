@@ -6,7 +6,7 @@
   color: #989;
 }
 
-.form, .greetings{
+.form, .greetings, .js-toDoForm{
   display: none;
 }
 .font-color-white{
@@ -40,7 +40,7 @@ body{
 }
 
 .showing{
-  display: block;
+  display: flex;
 }
 
 .js-title{
@@ -57,16 +57,30 @@ body{
   justify-content: center;
 }
 
-.js-toDoForm{
-  display: flex;
-  flex-direction: column;
+.js-form{
   flex: 1 1 auto;
-  align-items: center;
+  justify-content: center;
 }
-.js-toDoForm input{
+.inputTypeName{
   display: flex;
   width: 300px;
   font-size: 200%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.inputTypeName::placeholder{
+  color: #fff;
+}
+.inputTypeName:focus{
+  color: #fff;
+}
+
+.js-toDoForm{
+  /* display: flex; */
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
 }
 
 
@@ -81,8 +95,9 @@ body{
   justify-content: center;
 }
 .inputTypeToDo{
-  font-size: 300%;
-  font-size: 1.5vw;
+  display: flex;
+  width: 300px;
+  font-size: 200%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;

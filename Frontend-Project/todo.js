@@ -27,7 +27,6 @@ function saveToDos(){
     // 따라서 object인 toDos의 데이터가 제대로 저장되지 않음.
     // object 형태인 toDos의 데이터를 제대로 저장하기 위해 JSON.stringify사용
     // JSON.stringify는 자바스크립트 object를 string으로 바꿔주는 역할을 함.
-
 }
 
 function paintToDo(text){
