@@ -6,9 +6,14 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
+
 function filterFn(toDo){
     return 
 }
+
+function resetToDo(toDo){
+
+}  
 
 function deleteToDo(event){
     const btn = event.target;
@@ -19,6 +24,26 @@ function deleteToDo(event){
     });
     toDos = cleanToDos;
     saveToDos();
+}
+
+function checkToDo(event){
+    const square = event.target;
+    const li = square.parentNode;
+    let clicked = true;
+
+    const loadedToDos = localStorage.getItem(TODOS_LS);
+    const parsedToDos = JSON.parse(loadedToDos);
+
+    parsedToDos.filter
+
+    if(clicked === true){
+        square.classList.remove("fa-square");
+        square.classList.add("fa-check-square");
+    }
+    else{
+        square.classList.remove("fa-check-square");
+        square.classList.add("fa-square");
+    }
 }
 
 function saveToDos(){
@@ -33,20 +58,29 @@ function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
-    const newId = toDos.length+1;
+    const newId = 0;
+    const sqare = document.createElement("i");
+    sqare.classList.add("far", "fa-square");
+    sqare.addEventListener("click", checkToDo);
+    const isComplete = false;
+
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
 
+    li.appendChild(sqare);
     li.appendChild(span);
     li.appendChild(delBtn);
     li.id = newId;
+
+    newId++;
 
     toDoList.append(li);
 
     const toDoObj = {
         text: text,
         id: newId,
+        isComplete
     }
     toDos.push(toDoObj);
     saveToDos();
