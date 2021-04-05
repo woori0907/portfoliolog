@@ -118,6 +118,7 @@ body{
 li{
   font-size: 230%;
   margin-bottom: 1%;
+  list-style-type: none;
 }
 
 @keyframes fadeIn{
