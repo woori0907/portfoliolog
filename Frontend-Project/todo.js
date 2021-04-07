@@ -6,11 +6,6 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
-
-function filterFn(toDo){
-    return 
-}
-
 function resetToDo(toDo){
 
 }  
