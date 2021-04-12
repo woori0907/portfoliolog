@@ -5,8 +5,10 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 const TODOS_LS = "toDos";
 
 let toDos = [];
-  
- 
+
+function resetToDo(toDo){
+
+}  
 
 function deleteToDo(event){
     const btn = event.target;
