@@ -121,6 +121,21 @@ li{
   list-style-type: none;
 }
 
+.delBtn{
+  background:none;
+  border: none;
+  color: #fff;
+  vertical-align: middle;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+.fa-square{
+  margin-right: 1vw;
+}
+.fa-times{
+  font-size: 1.6em;
+}
+
 @keyframes fadeIn{
   from{
     opacity: 0.1;

@@ -52,20 +52,21 @@ function paintToDo(text){
     const span = document.createElement("span");
     const newId = 0;
     const sqare = document.createElement("i");
+    const close = document.createElement("i");
+    close.classList.add("fas", "fa-times");
     sqare.classList.add("far", "fa-square");
     sqare.addEventListener("click", checkToDo);
     const isComplete = false;
 
-    delBtn.innerText = "❌";
+    delBtn.appendChild(close);
     delBtn.addEventListener("click", deleteToDo);
+    delBtn.classList.add('delBtn');
     span.innerText = text;
 
     li.appendChild(sqare);
     li.appendChild(span);
     li.appendChild(delBtn);
     li.id = newId;
-
-    newId++;
 
     toDoList.append(li);
 
