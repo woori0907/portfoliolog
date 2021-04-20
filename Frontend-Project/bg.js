@@ -7,7 +7,7 @@ function paintImage(imgNumber){
     const imageURL = "https://source.unsplash.com/1600x900/?nightsky";
     backGround.style.backgroundImage = `url('${imageURL}')`;
     backGround.style.backgroundPosition = 'center center';
-    backGround.style.backgroundSize = 'cover';
+    backGround.style.backgroundSize = 'cover'; sd
 }
 
 function genNumber(){
